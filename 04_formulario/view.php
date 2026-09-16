@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>funcionario valor liquido salario</title>
 </head>
 <body>
     <form action="Processa.php" method="POST"> 
@@ -22,6 +22,6 @@
             <label for=""> quantidade total de descontos</label>
             <input type="number" name="descontos">
             <br>
-            <button type="subtmit">Enviar</button>
+            <button type="submit">Enviar</button>
 </body>
 </html>
