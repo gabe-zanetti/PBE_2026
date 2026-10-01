@@ -7,7 +7,7 @@
 </head>
 <style>
     Body {
-Background-color: #7a2d2dff;
+Background-color: #7a3939ff;
 }
     a {
   color: #dc2323ff;
@@ -24,19 +24,19 @@ Background-color: #7a2d2dff;
     <h2>Insira as informações abaixo para comprar!</h2>
     <form action="processa.php" method="POST">
         <label for="">Seu nome</label>
-        <input type="text" name="nome_cliente">
+        <input type="text" name="nome_cliente" required>
         <br>
         <label for="">Tipo de ingresso</label>
-        <input type="radio" name="tipo" value="inteira">
+        <input type="radio" name="tipo" value="inteira" required>
         <label for="">Inteira</label>
         <input type="radio" name="tipo" value="meia">
         <label for="">Meia</label>
         <br>
         <label for="">Quantidade</label>
-        <input type="number" name="quantidade">
+        <input type="number" name="quantidade" required>
         <br>
         <label for="">Filme</label>
-        <input type="radio" name="filme" value="coracao_selvagem">
+        <input type="radio" name="filme" value="coracao_selvagem" required>
         <label for="">Coração Selvagem</label>
         <input type="radio" name="filme" value="homem_aranha">
         <label for="">Homem Aranha</label>

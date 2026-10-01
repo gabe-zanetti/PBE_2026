@@ -7,7 +7,7 @@
 </head>
 <style>
     Body {
-Background-color: #7a2d2dff;
+Background-color: #7a3939ff;
 }
     a {
   color: #dc2323ff;
@@ -23,19 +23,19 @@ Background-color: #7a2d2dff;
 <body>
     <table>
         <tr>
-            <td><h3>Nome</h3></td>
-            <td><h3>Tipo de ingresso</h3></td>
-            <td><h3>Quantidade</h3></td>
-            <td><h3>filme escolhido</h3></td>
-            <td><h3>Preço total</h3></td>
+            <td>Nome</td>
+            <td>quantidade</td>
+            <td>tipo</td>
+            <td>filme</td>
+            <td>preço do ingresso individual</td>
+            <td>preço total</td>
         </tr>
         <tr>
-            <td><h3><?=$nome_cliente?></h3></td>
-            <td><h3><?=$tipo?></h3></td>
-           <td><h3><?=$quantidade?></h3></td>
-            <td><h3><?=$filme?></h3></td>
-            <td><h3><?=$preco_total?></h3></td>
+            <?php foreach ($informacoes as $informacao): ?>
+            <td><h3><?=$informacao['nome']?></h3></td>
+            <?php endforeach ?>
         </tr>
+        
     </table>
     <h2>Essas informações estão corretas?</h2>
     <H2>Se sim preencha os dados</H2>
@@ -43,7 +43,7 @@ Background-color: #7a2d2dff;
     <form action="processa2.php" method="POST">
 
     <label for="">Tipo de cartão</label>
-    <input type="radio" name="cartao" value="mastercard">
+    <input type="radio" name="cartao" value="mastercard" required>
     <label for="">Mastercard</label>
     <input type="radio" name="cartao" value="banco_brasil">
     <label for="">Banco do Brasil</label>
@@ -51,10 +51,10 @@ Background-color: #7a2d2dff;
     <label for="">Santander</label>
     <br>
     <label for="">Numero do cartão</label>
-    <input type="number" name="numero_cartao">
+    <input type="number" name="numero_cartao" required>
     <br>
     <label for="">Senha do cartão</label>
-    <input type="text" name="senha">
+    <input type="text" name="senha" required>
     <br>
     <button type="submit">Confirmar</button>
     </form>

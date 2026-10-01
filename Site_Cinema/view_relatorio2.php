@@ -7,7 +7,7 @@
 </head>
 <style>
     Body {
-Background-color: #7a2d2dff;
+Background-color: #7a3939ff;
 }
     a {
   color: #dc2323ff;
@@ -21,7 +21,8 @@ Background-color: #7a2d2dff;
 }
 </style>
 <body>
-    <h2 style="text-align: center;">Pagamento concluido com sucesso ^^!</h2>
+    <h2 style="text-align: center" >Pagamento concluido com sucesso ^^!</h2>
     <p><h2 style="text-align: center;">Se tiver ocorrido algum erro ou tenha alguma duvida mande email para: Ajuda.cinema.cinepop@proton.me</h2></p>
+    <p><h2 style="text-align: center;"><a href="Comeco.php">Clique aqui para voltar a pagina inicial!</a></h2></p>
 </body>
 </html>
