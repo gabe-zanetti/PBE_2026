@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LOCADORA</title>
+</head>
+<body>
+    <form action="logica.php" method="POST">
+        <h2>Dados do cliente</h2>
+        <label>Nome</label>
+        <br>
+        <input type="text" name="nome" required>
+        <br><br>
+        <label>E-mail</label>
+        <br>
+        <input type="email" name="email" required>
+        <h2>Dados da locação</h2>
+        <label>Data de retirada</label>
+        <br>
+        <input type="date" name="data_retirada" required>
+        <br>
+        <label>Quantidade de dias</label>
+        <br>
+        <input type="number" name="quant_dias" min=1>
+        <br><br>
+        <select name="categoria" id="categoria">
+            <option value="categoria1">Basico-R$ 100/dia</option>
+            <option value="categoria2">Intermediario-R$ 150/dia</option>
+            <option value="categoria3">Avaçado-R$ 200/dia</option>
+            
+        </select>
+        <br>
+        <h3>Seguro total</h3>
+        <br>
+        <input type="radio" id="sim" name="seguro_total" value="true" required>Sim
+
+         <input type="radio" id="nao" name="seguro_total" value="false" >Não
+         <br>
+         <h3>GPS</h3>
+        <br>
+         <input type="radio" id="sim" name="gps" value="true" required>Sim
+        
+         <input type="radio" id="nao" name="gps" value="false" >Não
+         <br>
+         <h3>Cadeirinha infantil</h3>
+        <br>
+          <input type="radio" id="sim" name="caderinha_infantil" value="true" required>Sim
+        
+         <input type="radio" id="nao" name="caderinha_infantil" value="false" >Não
+        <br><br>
+        <button type="submit">Gerar contrato</button>
+    </form>
+</body>
+</html>
