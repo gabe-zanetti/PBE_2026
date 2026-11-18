@@ -1,0 +1,68 @@
+*{
+        margin: 0px;
+        padding: 0px;
+        font-family: Arial;
+        color: #132b52;
+    }
+
+    form, .visualizacao {
+        background-color: #f7f7f7;
+        margin: 20px;
+        padding: 20px;
+        color: #132b52;
+        border-radius: 40px;
+    }
+    
+    ul{
+        list-style-type: none;
+        background-color: #d2e6ff;
+        position: fixed;
+        width: 100%;
+        top: 0;
+        z-index: 10000;
+        padding: 5px;
+    }
+    li{
+        float:left;
+        font-family: Arial;
+        font-size: 20px;
+        background-color: #d2e6ff;
+    }
+    .direita{
+        float: right;
+        margin:10px;
+        background-color: #d2e6ff;
+    }
+    .principal{
+        display: grid;
+        justify-items: center;
+        margin-top: 50px;
+        text-align: justify;
+        background-color: #ececec;
+        width: 100%;
+        min-height: 100vh;
+    }
+    .esquerda_relatorio{
+        float: left;
+        margin-left: 10px;
+        margin-right: 10px;
+        margin-top: 20px;
+        text-align: justify;
+        background-color: #f7f7f7;
+    }
+
+    .direita_relatorio{
+        float: right;
+        margin-left: 10px;
+        margin-right: 10px;
+        margin-top: 20px;
+        text-align: justify;
+        background-color: #f7f7f7;
+    }
+
+    img{
+        width: 25%;
+        margin-bottom: 0px;
+    }
+
+

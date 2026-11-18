@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Weitech</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+    <header>
+            <nav>
+                <ul>
+                    <li class="direita"><a class="ativo" href="#">   Encomendas  </a></li>
+                    <li class="direita"><a class="ativo" href="#">Historico</a></li>
+
+                </ul>
+            </nav>
+        </header>
+    <div class="principal">
+        <h1>Seja bem-vindo á WEITECH 🚛</h1>
+        <h2>Planejar Transporte</h2>
+        <form action="logica.php" method="POST">
+            <div class="esquerda_relatorio">
+                <label for="">Nome do cliente:</label><br>
+                <input type="text" name="nome" required>
+                <br><br>
+
+                <label for="">Cidade de destino:</label><br>
+                <input type="text" name="cidade" required>
+                <br><br>
+
+                <label for="">Distancia da viajem (km): </label><br>
+                <input type="number" name="destancia" required min="0" step="0.1">
+                <br><br>
+
+                <label for="">Quantidade de piso (60x60):</label><br>
+                <input type="number" name="qtd_piso" required min="0">
+                <br><br>
+                <label for="">Quantidade de revestimento (30x60):</label><br>
+                <input type="number" name="qtd_revestimento" required min="0">
+                <br><br>
+            </div>
+            
+            <div class="direita_relatorio">
+                
+
+                <label for="">Quantidade de argamassa:</label><br>
+                <input type="number" name="qtd_argamassa" required min="0">
+                <br><br>
+
+                <label for="">Caminhão:</label><br>
+                <input type="radio" name="caminhao" value="vuc">
+                <label for="">Vuc</label><br>
+                <input type="radio" name="caminhao" value="toco">
+                <label for="">Toco</label><br>
+                <input type="radio" name="caminhao" value="truck">
+                <label for="">Truck</label><br>
+                <br>
+
+                <label for="">Urgente?</label><br>
+                <input type="radio" name="urgencia" value="sim" required>
+                <label for="">Sim</label><br>
+                <input type="radio" name="urgencia" value="nao" required>
+                <label for="">Não</label><br>
+                <br>
+                <button type="submit">Pedir</button>
+            </div>
+            
+
+            
+
+        </form>
+    </div>
+</body>
+</html>
